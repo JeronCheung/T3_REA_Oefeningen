@@ -1,8 +1,8 @@
 <?php
 /**
- * User: S. Tudent
- * Date: Date
- * File: index.php
+ * User: Jeron Cheung
+ * Date: 25-2-2021
+ * File: T3_REA_Oefening_2_1.php
  */
 ?>
 <!DOCTYPE html>
@@ -27,9 +27,7 @@
 </header>
 <main>
     <article id="menu">
-        <p>
         <h2>Thema 3</h2>
-        </p>
         <p>
         <ul>
             <li id="hoofd">Hoofdstuk 2</li>
