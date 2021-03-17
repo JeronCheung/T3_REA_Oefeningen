@@ -19,30 +19,23 @@
 </head>
 <body>
 <header>
-    <h1>
-        <?php
-            echo 'Oefening 2.1';
-        ?>
-    </h1>
+    <?php
+        require "../standaard/nav.php" ;
+    ?>
+
 </header>
 <main>
-    <article id="menu">
-        <h2>Thema 3</h2>
-        <p>
-        <ul>
-            <li id="hoofd">Hoofdstuk 2</li>
-            <?php
-                echo '<ul><li><a href="T3_REA_Oefening_2_1.php">Oefening 2.1</a></li></ul>';
-                echo '<ul><li><a href="T3_REA_Oefening_2_2.php">Oefening 2.2</a></li></ul>';
-            ?>
-        </ul>
-        </p>
-    </article>
+    <h1>
+        <?php
+        echo 'Oefening 2.1';
+        ?>
+    </h1>
+
 
     <article>
         <h2 id="uitwerking">
             <?php
-                echo "<p>Wat is PHP</p>";
+                echo "Wat is PHP";
             ?>
         </h2>
         <p>
@@ -72,10 +65,16 @@
             echo "Door te werken met gebruikers en het opzoeken om de gegevens eruit te halen in een database. 
             Met PHP ga je deze gegevens in een database verwerken. ";
             ?>
+            
         </p>
     </article>
 
 </main>
+<footer>
+    <?php
+    require "../standaard/footer.php" ;
+    ?>
+</footer>
 </body>
 </html>
 

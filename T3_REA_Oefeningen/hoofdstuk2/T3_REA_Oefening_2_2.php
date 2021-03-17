@@ -19,27 +19,17 @@
 </head>
 <body>
 <header>
+    <?php
+    require "../standaard/nav.php" ;
+    ?>
+</header>
+
+<main>
     <h1>
         <?php
         echo 'Oefening 2.2';
         ?>
     </h1>
-</header>
-<main>
-    <article id="menu">
-        <p>
-        <h2>Thema 3</h2>
-        </p>
-        <p>
-        <ul>
-            <li id="hoofd">Hoofdstuk 2</li>
-            <?php
-            echo '<ul><li><a href="T3_REA_Oefening_2_1.php">Oefening 2.1</a></li></ul>';
-            echo '<ul><li><a href="T3_REA_Oefening_2_2.php">Oefening 2.2</a></li></ul>';
-            ?>
-        </ul>
-        </p>
-    </article>
     <article>
         <h2 id="uitwerking">
             <?php
@@ -80,5 +70,10 @@
     </article>
 
 </main>
+<footer>
+    <?php
+    require "../standaard/footer.php" ;
+    ?>
+</footer>
 </body>
 </html>

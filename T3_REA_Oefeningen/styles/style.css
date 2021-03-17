@@ -4,6 +4,7 @@ body
     padding: 0;
     margin: 0;
     font-family: Arial;
+    height: 100vh;
 }
 
 
@@ -40,4 +41,26 @@ img
     height: 100px;
     float: right;
 }
+
+main
+{
+    margin-left: 1%;
+    height: 80vh;
+}
+
+li
+{
+    height: 20px;
+    width: 10%;
+    float: left;
+    text-align: left;
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
 

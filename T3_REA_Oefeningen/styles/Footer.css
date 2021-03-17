@@ -1,0 +1,20 @@
+body
+{
+    margin: 0%;
+
+}
+
+footer
+{
+    font-family: Arial;
+    height: 5%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5%;
+    position: relative;
+    line-height: 50px;
+    margin-left: 0px;
+    padding-left: 0%;
+    clear: both;
+}
