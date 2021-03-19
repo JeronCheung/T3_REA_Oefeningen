@@ -6,26 +6,33 @@
  */
 ?>
 <!DOCTYPE html>
+<!--html taal set in nederlands-->
 <html lang="nl">
 <head>
+    <!--    titel van het tablad-->
     <title>
         <?php
-        echo 'Realiseren oefeningen template thema 3 en 4 .';
+        echo 'Opdracht 2.1';
         ?>
     </title>
+    <!-- declaren karakterset -->
     <meta charset="UTF-8">
+    <!-- declareren viewpoint -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link met het css bestand-->
     <link href="../styles/style.css" rel="stylesheet">
 </head>
 <body>
 <header>
+    <!--    Verbind het navigatie php bestand-->
     <?php
-        require "../standaard/nav.php" ;
+        require "../includes/nav.php" ;
     ?>
 
 </header>
 <main>
     <h1>
+        <!--titel van opdracht in php-->
         <?php
         echo 'Oefening 2.1';
         ?>
@@ -33,11 +40,13 @@
 
 
     <article>
+        <!--titel in php van het verhaal-->
         <h2 id="uitwerking">
             <?php
                 echo "Wat is PHP";
             ?>
         </h2>
+        <!--tekst in php-->
         <p>
 
             <?php
@@ -47,7 +56,7 @@
                     Deze taal is verhelijkbaar met de andere programmeer talen zoals Python, Perl en Ruby.";
             ?>
         </p>
-
+        <!--tekst in php-->
         <p>
             <?php
             /* Uitleg over server-side en webservers */
@@ -56,7 +65,7 @@
             dan wordt het in een webbrowser vertoond. PHP wordt wordt niet weergeven als je een website inspecteerd."
             ?>
         </p>
-
+<!--tekst in php-->
         <p>
             <?php
             /* Uitleg over de werking van databases en webservers met PHP */
@@ -72,7 +81,7 @@
 </main>
 <footer>
     <?php
-    require "../standaard/footer.php" ;
+    require "../includes/footer.php" ;
     ?>
 </footer>
 </body>

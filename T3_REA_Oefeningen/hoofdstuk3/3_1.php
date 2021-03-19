@@ -6,26 +6,35 @@
  * File: T3_REA_Oefening_2_1.php
  */
 ?>
+
 <!DOCTYPE html>
+<!--html taal set in nederlands-->
 <html lang="nl">
-    <head>
-        <title>
-            <?php
-            echo 'Realiseren oefeningen template thema 3 en 4 .';
-            ?>
-        </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="../styles/style.css" rel="stylesheet">
-    </head>
+<head>
+    <!--    titel van het tablad-->
+    <title>
+        <?php
+        echo 'Opdracht 3.1';
+        ?>
+    </title>
+    <!-- declaren karakterset -->
+    <meta charset="UTF-8">
+    <!-- declareren viewpoint -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link met het css bestand-->
+    <link href="../styles/style.css" rel="stylesheet">
+</head>
     <body>
     <header>
+        <!--    Verbind het navigatie php bestand-->
         <?php
-        require "../standaard/nav.php" ;
+        require "../includes/nav.php" ;
         ?>
     </header>
         <main>
+            <!--    titel taak-->
             <h1> Taak 1</h1>
+<!--            lijst van variabelen -->
             <?php
                 $event = "Carnaval" ;
                 $dagen = "zondag, maandag,dinsdag";
@@ -35,12 +44,9 @@
                 $provincie = "Noord-Brabant";
                 $voedsel = array("koffie Schrobbeler" ,"Worstenbrood");
             ?>
-
+            <!--tekst met verbonden variabelen erin-->
             <?php
-            echo
-            "<p>";
-            echo
-                $story =
+                 $story =
                 "$event is van oorsprong een gekerstend heidens volksfeest. Het duurt 
                 officieel $getal dagen, $dagen direct voorafgaand aan de 
                 vastentijd van $getal2 dagen. $event is bij uitstek het feest van zotheid, spot 
@@ -49,44 +55,41 @@
                 Aswoensdag wordt $event afgesloten, maar de tradities verschillen per 
                 regio. In het overgrote deel van $provincie wordt er afgesloten met 
                 $voedsel[0], $voedsel[1]  soms met een Brabantse koffietafel.";
-            echo
-            "</p>";
-            ?>
+            echo"<p>" . $story . "</p>";
 
+            ?>
+            <!--    titel taak-->
             <h1>
                 Taak 2
             </h1>
+            <!--            lijst van variabelen -->
             <?php
-            $perpersoon =  120;
-            $verdeling = 3;
+            $bon1  =  120.0;
+            $bon2  =  80.0;
+            $bon3  =  40.0;
             ?>
 
+<!--het totale bedrag van alle bonnetjes-->
             <?php
-                echo
-                "<p>";
-                echo
-                "Kosten per persoon is € $perpersoon";
-                "</p>";
-            ?>
-
-            <?php
-                echo "<br>";
                 echo "<p>";
-                echo "Het totaalbedrag is = " ;
-                echo "€ " . $total = $perpersoon + $perpersoon + $perpersoon + $perpersoon  ;
+                echo "Het totaalbedrag is = "  ;
+                echo "€ " . $total = $bon1 + $bon2 + $bon3  ;
                 "</p>";
                 echo "<p>";
-                echo "Kosten per persoon bedragen: ". $total / $verdeling . " Euro";
+//                wat ze per persoon moeten betalen
+                echo "Kosten per persoon bedrag: ". $total / 4 .  " Euro" ;
                 "</p>";
 
-            ?>
-
+            ?>s
+            <!--    titel taak-->
             <h1>
                 Challenge
             </h1>
+<!--            de final kosten-->
             <?php
-            $totalepp = 160/ 10 * 4 + 480 - 50;
-            echo $totalepp / 3;
+            $totaleinde = ($total + $total / 100 * 10 + 0.50) / 4;
+            $afgerondTotaaleinde = number_format($totaleinde, 2, ",", '');
+            echo 'De uiteindelijke kosten na het geven van fooi is €' . $afgerondTotaaleinde;
 
             ?>
 
@@ -94,7 +97,7 @@
         </main>
     <footer>
         <?php
-        require "../standaard/footer.php" ;
+        require "../includes/footer.php" ;
         ?>
     </footer>
     </body>
