@@ -5,7 +5,7 @@
  * File: index.php
  */
 ?>
-<link href="../styles/Footer.css" rel="stylesheet">
+<link href="/T3_REA_Oefeningen/styles/Footer.css" rel="stylesheet">
 <footer>
     <?php
         echo "Jeron Cheung 4D " . date("d-m-Y") . "<br>";
