@@ -46,7 +46,7 @@
             ?>
             <!--tekst met verbonden variabelen erin-->
             <?php
-                 $story =
+            $story =
                 "$event is van oorsprong een gekerstend heidens volksfeest. Het duurt 
                 officieel $getal dagen, $dagen direct voorafgaand aan de 
                 vastentijd van $getal2 dagen. $event is bij uitstek het feest van zotheid, spot 
