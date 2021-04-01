@@ -14,7 +14,7 @@
  */
 
 // variabele declareren en initialiseren
-$thisYear = 2012;
+$thisYear = 2013;
 
 /**
  * function om schrikkeljaar mee te checken.

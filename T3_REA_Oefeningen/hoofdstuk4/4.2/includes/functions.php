@@ -1,10 +1,10 @@
 <?php
 
-function CheckTrafficLight($color, $ambulance)
+function CheckTrafficLight($kleur, $help)
 {
-    if ($ambulance == false)
+    if ($help == false)
     {
-        if ($color == "rood" || $color == "oranje")
+        if ($kleur == "rood" || $kleur == "oranje")
         {
             echo "je moet stoppen";
         }
@@ -14,62 +14,61 @@ function CheckTrafficLight($color, $ambulance)
             echo "je kan doorrijden";
         }
     }
-    elseif ($ambulance == true)
+    elseif ($help == true)
     {
         echo "U moet stoppen";
     }
 }
 
-$rood = "er komt geen ambulance aan";
-$groen = "er komt een ambulance aan.";
+$red = "helaas komt er geen ambulance aan";
+$green = " een ambulance is onderweg aan.";
 
-function showmenu ($dag)
+function showmenu ($dagen)
 {
-    switch ($dag)
+    switch ($dagen)
     {
 
         case "Monday";
-            echo "Vandaag eet ik pasta";
+            echo "Vandaag eet ik friet";
             break;
         case "Tuesday";
-            echo "Vandaag eet ik noodles";
+            echo "Vandaag eet ik kipjes";
             break;
         case "Wednesday";
-            echo "Vandaag eet ik groenteschotel";
+            echo "Vandaag eet ik bananen";
             break;
         case "Thursday";
-            echo "Vandaag eet ik kip";
+            echo "Vandaag eet ik appels";
             break;
         case "Friday";
-            echo "Vandaag eet ik eend";
+            echo "Vandaag eet ik kroket";
             break;
         case "Saturday";
-            echo "Vandaag eet ik hond";
+            echo "Vandaag eet ik frikandel";
             break;
         case "Sunday";
-            echo "Vandaag eet ik kat";
+            echo "Vandaag eet ik poesje";
             break;
     }
 
 }
 
 
-
-    function CheckLadiesNight ($geslacht, $age)
+    function CheckLadiesNight ($gender, $leeftijd)
     {
-        if ($age >= 18 && $geslacht == "vrouw")
+        if ($leeftijd >= 18 && $gender== "man")
         {
-            if ($age >= 70)
+            if ($leeftijd >= 70)
             {
-                echo "U heeft gratis entree!";
+                echo "gratis entree!";
             }
             else
             {
-                echo "U mag naar binnen, maar u moet wel betalen.";
+                echo "je kan naar binnen, maar betalen.";
             }
         }
         else
         {
-            echo "U heeft geen toegang om naar binnen te gaan, deze club is alleen voor vrouwen boven de 18 jaar!";
+            echo "je kan naar binnen, de club is alleen voor vrouwen boven de 18 jaar!";
         }
     }
