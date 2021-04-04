@@ -14,6 +14,7 @@
         <meta charset="UTF-8" >
         <meta name="viewport" content="width=device-width initial-scale=1" >
         <link rel="stylesheet" href="styles/stylesheet.css">
+        <img src="images/cola.png"
     </head>
     <body>
         <?php
@@ -23,8 +24,13 @@
                 $choice = $_POST['drinks'];
                 $money = $_POST['money'];
                 $change = ($money - 1.5);
+ if ($money == NULL )
+     {
+         0.0;
+     }
 
-/*
+
+                /*
                 // -- Opdrachten -- //
                 1. Maak een if/else statement die checkt of het wisselgeld 0 euro of meer is (m.a.w.: er is genoeg geld ingeworpen)
                 2. Wanneer er genoeg geld ingeworpen is:
@@ -50,13 +56,57 @@
                 // schrijf hier je code . . .
 
 
-                // tot hier
+
+                    function wisselgeld( $check)
+                    {
+                        if ($check >= 0 )
+                        {
+                            echo "het ingeworpen bedrag is €1.5";
+                        }
+                        elseif($check == 1.5)
+                        {
+                            function showmenu ($choice)
+                            {
+                                switch ($choice)
+                                {
+                                    case "cocacola";
+                                        echo "U heeft Coca Cola gekozen";
+                                        echo '<img src="/images/cola.png"> " width="200" " height="200" ';
+                                        break;
+
+                                    case "cassis";
+                                        echo "U heeft Coca Cola gekozen";
+                                        echo '<img src="/images/cassis.png"> " width="200" " height="200" ';
+                                        break;
+
+                                    case "fanta";
+                                        echo "U heeft Coca Cola gekozen";
+                                        echo '<img src="/images/fanta.png"> " width="200" " height="200" ';
+                                        break;
+
+                                    case "icetea";
+                                        echo "U heeft Coca Cola gekozen";
+                                        echo '<img src="/images/icetea.png"> " width="200" " height="200" ';
+                                        break;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            elseif ($check <= 1.5)
+            {
+                echo "U heeft ingeworpen: € $check ";
+                echo "U komt nog  $check tekort";
             }
+
+                // tot hier
+$check = NULL ;
 
             else
 
             {
-
+//
         ?>
 
                     <form id="form" action="" method="POST">
@@ -76,6 +126,11 @@
                             Werp hier uw contant geld in:
                         </h3>
                         <input type="double" name="money">
+                <?php
+                    echo "<hr><h2>Taak 2</h2> ";
+                        echo $choice;
+                        showmenu($choice);
+                ?>
                     </form>
 
         <?php
