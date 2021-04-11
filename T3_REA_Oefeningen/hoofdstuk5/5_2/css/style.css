@@ -1,0 +1,15 @@
+h1
+{
+    text-align: center;
+}
+
+input
+{
+    float: right;
+    margin-right: 70%;
+}
+
+#send
+{
+    float: left;
+}

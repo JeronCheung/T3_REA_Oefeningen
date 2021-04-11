@@ -56,7 +56,7 @@
                 // schrijf hier je code . . .
 
 
-
+                $check = NULL;
                     function wisselgeld( $check)
                     {
                         if ($check >= 0 )
@@ -94,6 +94,7 @@
                     }
 
                 }
+
             elseif ($check <= 1.5)
             {
                 echo "U heeft ingeworpen: € $check ";
@@ -101,11 +102,9 @@
             }
 
                 // tot hier
-$check = NULL ;
 
-            else
 
-            {
+s
 //
         ?>
 
@@ -133,8 +132,6 @@ $check = NULL ;
                 ?>
                     </form>
 
-        <?php
-            }           // else afsluiten
-        ?>
+
     </body>
 </html>
