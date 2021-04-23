@@ -1,0 +1,38 @@
+@font-face
+{
+    src: url("../font/Sintony-Bold.ttf");
+    font-family: "Sintony";
+}
+
+*
+{
+    font-family:"Sintony";
+}
+
+body
+{
+    background-color: #66b6df;
+}
+
+main
+{
+    margin: 1%;
+}
+
+img
+{
+    float: right;
+    width: 100px;
+    height: 100px;
+    margin: 1%;
+    margin-right: 40%;
+    margin-top: -1%;
+}
+
+a
+{
+    text-decoration: underline;
+    color: white;
+}
+
+

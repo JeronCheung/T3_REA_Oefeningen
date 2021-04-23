@@ -1,0 +1,70 @@
+@font-face
+{
+    src: url("../font/Sintony-Bold.ttf");
+    font-family: "Sintony";
+}
+
+body
+{
+    background-color: #66b6df;
+    font-family:"Sintony";
+}
+
+#form
+{
+    margin: 1%;
+}
+
+hr
+{
+    background-color: white;
+    color: white;
+    padding: 1px;
+}
+
+select
+{
+    float: right;
+    background-color: #000000 ;
+    color: #eeeeee;
+    border: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    text-decoration: none;
+    margin-right: 44%;
+}
+
+label
+{
+    color: #ffffff;
+}
+
+h1
+{
+    text-align: center;
+}
+
+option
+{
+    color: #ef2b2d;
+    background-color: #cce7f4;
+    padding: 8px 16px;
+}
+
+#knop
+{
+    border: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 15px 32px;
+}
+
+#opmaak
+{
+    background-color: #ef2b42;
+    color: #ffffff;
+    padding: 1%;
+}
+

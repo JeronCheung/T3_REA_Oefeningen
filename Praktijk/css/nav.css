@@ -1,0 +1,149 @@
+/*Maakt de menubalk horizontaal en de kleur van de tekst wit en dikgedrukt*/
+li
+{
+    display: inline;
+    font-size:23px;
+    margin-left:3vw;
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+/* Ruimte van menu balk*/
+ul
+{
+    background-color:#1c83c5;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+}
+
+/*Haalt link style weg*/
+a:link
+{
+    text-decoration: none;
+
+}
+
+/*Maakt link wit*/
+a
+{
+    color:white;
+}
+
+/*Past link aan als er overheen bewogen wordt*/
+a:hover
+{
+    background-color:white;
+    color:#1c83c5;
+    padding-top:20vw;
+    padding-bottom: 2.5vw;
+    position: relative;
+}
+
+/*Plaatst Logo van Koning Willem 1 College*/
+#kw1c_Logo
+{
+    position: absolute;
+    height: 80.5px;
+    width: 80px;
+    left:10px;
+    top:1px;
+
+}
+
+/*Plaats afbeelding van Engelese vlag*/
+#flag_England
+{
+    width:50px;
+    height:25px;
+    margin-left: 5vw;
+    border:black 1px solid;
+}
+
+/*Past menu balk tekst als scherm kleiner wordt gemaakt*/
+@media only screen and (max-width: 1250px)
+{
+    #left_text
+    {
+        margin-left:2vw;
+    }
+
+}
+/* Hier boven is de css voor de navigatie en hieronder de navigatie voor de home screen */
+
+/*Grote van achtergronds foto*/
+#background_home
+{
+    z-index: 1;
+}
+/*ruimte van de browser ervan af zodat ie zichtbaar word erna*/
+#opmaak2
+{
+    margin:  0 40px 0 0;
+    font-size: 26px;
+    display: none;
+    width: 40px;
+    float: left;
+}
+
+/*het blokje op scherm dat je aanvinkt is weg*/
+#toggle
+{
+    display: none;
+}
+
+/* navigatie balk met de links*/
+#menu_list
+{
+    margin: 0px;
+    padding: 2%;
+}
+
+
+
+/*de opmaak van mijn pagina's worden aangepast als het scherm kleiner word met een maximale breedte van 1100 pixels*/
+@media only screen and (max-width: 1100px)
+{
+
+    #opmaak2
+    {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+    }
+    /*opmaak van navigatie balk*/
+    #menu_list
+    {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    /*    zorgt ervoor dat het onder elkaar ligt met een opmaak*/
+    #menu_list a
+    {
+        display: block;
+        padding-top: 5%;
+        margin: 0px;
+    }
+
+    /*als je op het menu klikt verschijnt er een menu*/
+    #toggle:checked + #menu_list
+    {
+        display: block;
+    }
+
+    #kw1c_Logo
+    {
+        display: none;
+    }
+
+    #flag_England
+    {
+        display: none;
+    }
+}

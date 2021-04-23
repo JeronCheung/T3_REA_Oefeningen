@@ -1,0 +1,133 @@
+/*Haalt wit ruimte weg*/
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../Images/background_home_page.jpg");
+    background-clip: padding-box;
+    position: absolute;
+}
+/*Zet navigatie vast en voorin*/
+nav
+{
+    position: fixed;
+    margin-top:-25px;
+    z-index: 2;
+
+}
+/*Maakt de menubalk horizontaal en de kleur van de tekst wit en dikgedrukt*/
+li
+{
+    display: inline;
+    font-size:23px;
+    margin-left:3vw;
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+/*Linker text in menubalk*/
+#left_text
+{
+    margin-left:15vw;
+
+}
+
+/* Ruimte van menu balk*/
+ul
+{
+    background-color:#1c83c5;
+    width: 100vw;
+    padding:39px;
+    margin:10px;
+}
+
+/*Haalt link style weg*/
+a:link
+{
+    text-decoration: none;
+
+}
+
+/*Maakt link wit*/
+a
+{
+    color:white;
+}
+
+/*Past link aan als er overheen bewogen wordt*/
+a:hover
+{
+    background-color:white;
+    color:#1c83c5;
+    padding-top:20vw;
+    padding-bottom: 2.5vw;
+    position: relative;
+}
+
+/*Plaatst Logo van Koning Willem 1 College*/
+#kw1c_Logo
+{
+    position: absolute;
+    height: 94.5px;
+    width: 95px;
+    top:20px;
+    left:0px;
+}
+
+/*Plaats afbeelding van Engelese vlag*/
+#flag_England
+{
+    width:50px;
+    height:25px;
+    margin-left: 5vw;
+    position: fixed;
+    border:black 1px solid;
+}
+
+/*Past menu balk tekst als scherm kleiner wordt gemaakt*/
+@media only screen and (max-width: 1250px)
+{
+    #left_text
+    {
+        margin-left:2vw;
+    }
+
+}
+/* ******** Hier boven is de css voor de navigatie en hieronder de navigatie voor de home screen *******/
+
+/*Grote van achtergronds foto*/
+#background_home
+{
+
+    z-index: 1;
+}
+
+/*Als de breedte van een telefoon is*/
+@media only screen and (max-width: 800px)
+{
+    li
+    {
+        margin-left:20px;
+        position: relative;
+        display: none;
+
+    }
+    /*Past foto aan als scherm kleiner wordt*/
+    #kw1c_Logo
+    {
+        position: fixed;
+        top:0px;
+    }
+
+    /*Zorgt ervoor dat de menu balk niet kapot gaat*/
+    ul
+    {
+        width: 100vw;
+        height: 3.5vh;
+        left:-30px;
+        position:absolute;
+    }
+
+}

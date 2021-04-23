@@ -1,0 +1,24 @@
+@font-face
+{
+    src: url("../font/Sintony-Bold.ttf");
+    font-family: "Sintony";
+}
+
+
+/*Haalt wit ruimte weg en achtergrond foto*/
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../foto/background_home_page.jpg");
+    font-family: "Sintony";
+    background-color: #66b6df;
+    background-repeat: no-repeat;
+}
+
+img
+{
+
+    background-size: 1800px 550px;
+    width: 100%;
+}

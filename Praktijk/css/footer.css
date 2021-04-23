@@ -1,0 +1,29 @@
+/*opmaak body*/
+body
+{
+    margin: 0%;
+}
+
+@font-face
+{
+    src: url("../font/Sintony-Bold.ttf");
+    font-family: "Sintony";
+}
+
+
+/*opmaak footer*/
+footer
+{
+    font-family: "Sintony";
+    height: 2%;
+    background-color: #ef2b2d;
+    color: white;
+    text-align: center;
+    padding: 0.5%;
+    position: relative;
+    margin-left: 0px;
+    padding-left: 0%;
+    clear: both;
+    padding: 1px;
+    font-size: 20px;
+}
