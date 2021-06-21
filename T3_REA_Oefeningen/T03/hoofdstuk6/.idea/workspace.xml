@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9d5ef9d-d0e8-4451-857c-47912a8bba52" name="Default Changelist" comment="" />
+    <list default="true" id="c9d5ef9d-d0e8-4451-857c-47912a8bba52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Praktijk/T04/includes/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Praktijk/T04/includes/nav.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Praktijk/T04/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Praktijk/T04/pagina/inlog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Praktijk/T04/pagina/medewerker.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Praktijk/T04/styles/nav.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,8 +18,9 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0" />
   <component name="ProjectId" id="1r2LlcIVLvvUSNbTByXofy7sDKH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -23,7 +31,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hoofdstuk5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -35,6 +43,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618169389507</updated>
       <workItem from="1618169390664" duration="326000" />
+      <workItem from="1620593060094" duration="36000" />
     </task>
     <servers />
   </component>
@@ -51,5 +60,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

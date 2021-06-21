@@ -20,7 +20,7 @@
         <header>
             <!--    Verbind het navigatie php bestand-->
             <?php
-            require "/inetpub/wwwroot/T3_REA_Oefeningen/includes/nav.php";
+            require "/inetpub/wwwroot/T3_REA_Oefeningen/T03/includes/nav.php";
             ?>
         </header>
         <main id="opmaak">

@@ -10,7 +10,7 @@ function startConnection()
     // Open de database connectie en ODBC driver
     try
     {
-        $pdo = new PDO("odbc:odbc2sqlserver");
+        $pdo = new PDO("odbc:sport");
     }
     catch (PDOException $e)
     {
@@ -28,32 +28,16 @@ function executeQuery($sql)
     try
     {
         // Query uitvoeren
-        $result = $pdo->query("SELECT * FROM Activity");
+        $result = $pdo->query($sql);
 
         return $result;
     }
     catch (PDOException $e)
     {
-        echo 'Er is een probleem met ophalen van jokes: ' . $e->getMessage();
+        echo 'Er is een probleem met je oppakken van de gegevens is beter: ' . $e->getMessage();
         exit();
     }
 }
 
-function executeInsertQuery($query)
-{
-    global $pdo;
-
-    try
-    {
-        $rowsAffected = $pdo->exec($query);
-    }
-    catch(PDOException $error)
-    {
-        $rowsAffected = 0;
-        echo "<p>Er is een error opgetreden: ". $error->getMessage() . "</p>";
-    }
-
-    return $rowsAffected;
-}
 
 ?>

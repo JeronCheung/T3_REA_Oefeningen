@@ -1,4 +1,4 @@
-<link href=/T3_REA_Oefeningen/styles/nav.css rel=stylesheet>
+<link href=/styles/nav.css rel=stylesheet>
 <?php
 /**
  * User: Jeron Cheung

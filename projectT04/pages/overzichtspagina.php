@@ -1,36 +1,84 @@
 <?php
+
+include "/inetpub/wwwroot/projectT04/includes/nav.php";
+   echo "    <link  rel='stylesheet' href= '/css/style.css'>";
 session_start();
-$pass = "welkom123";
-if(isset($_POST["wacht"])) {
-//als username en password wel goed is krijg je een lijst met gegevens
-    if ($_POST["wacht"] == $pass) {
-        $_SESSION['wacht'] = $pass;
-        if (isset($_SESSION['naam'])) {
-            //            Titels lijst met gegevens
-            echo "<table id='lijst'>";
-            echo "<tr>";
-            echo "<th class='titel'>Name</th>";
-            echo "<th class='titel'>start</th>";
-            echo "<th class='titel'>End</th>";
-            echo "<th class='titel'>Location</th>";
-            echo "</tr>";
 
-            $i = 0;
-            while ($i <= 14) {
-                //  Titels lijst met gegevens
-                echo "<tr>";
+include ('../includes/db_functions.php');
+startConnection();
 
-                echo "</tr>";
-                $i++;
+$query = "SELECT * FROM Activity";
+$result = executeQuery($query);
 
-            }
-            //            Stuk tekst onderaan als je bent ingelogd met de juiste gegevens
-            echo "</table>";
-            echo "<footer class='ingelogd'>U bent ingelogd</footer>";
+
+$groupby =  "select [name] from activity GROUP By [name] ";
+$groupby2= "select [Start] from  activity GROUP By  [Start] ";
+$groupby3= "select [End] from  activity GROUP By [End] ";
+$groupby4= "select Location from  activity GROUP By Location ";
+
+echo "<table id='lijst'>";
+echo "<tr>";
+echo "<th class='titel'></th>";
+echo "<th class='titel'><a href='overzichtspagina.php?WhatFilter=Alphabet>'> Name</a></th>";
+echo "<th class='titel'><a href='overzichtspagina.php?WhatFilter=datum'>Start </a></th>";
+echo "<th class='titel'><a href='overzichtspagina.php?WhatFilter=datum>'> End</a></th>";
+echo "<th class='titel'><a href='overzichtspagina.php?WhatFilter=Alphabet'>Location</a></th>";
+echo "</tr>";
+
+while ($row = $result->fetch(PDO::FETCH_ASSOC))
+{
+    echo "<tr>";
+    echo "<td><a href='../includes/form.php?Name=". $row["Name"] ."' >Bewerk</a>" ."</td>";
+    echo "<td>" . $row["Name"] . "</td>";
+    echo "<td>" . $row["Start"] . "</td>";
+    echo "<td>" . $row["End"] . "</td>";
+    echo "<td>" . $row["Location"] . "</td>";
+    echo "</tr>";
+}
+//            Stuk tekst onderaan als je bent ingelogd met de juiste gegevens
+echo "</table>";
+
+if(isset($_GET["whatFilter"]))
+{
+    var_dump($_GET["whatFilter"]);
+    //is de inhoud van de $_GET alphabet?
+    if ($_GET["whatFilter"] == "alphabet")
+    {
+            $query = $groupby;
+        }
+        //of is de inhoud *voer wat in*
+
+    elseif
+        ($_GET["whatFilter"] == "datum")
+        {
+            $query = $groupby2;
+        }
+    elseif
+        ($_GET["whatFilter"] == "datum")
+        {
+            $query = $groupby3;
+        }
+    elseif
+        ($_GET["whatFilter"] == "Alphabet")
+        {
+            $query = $groupby4;
+        }
+    else
+        {
+            $query = "SELECT * FROM Activity ";
         }
     }
 
-}
-?>
+else
+    {
+        $query = "SELECT * FROM Activity ";
+    }
+
+
+
+
+
+
+
 
 

@@ -1,6 +1,6 @@
 <!--     Voegt navigatie toe voor thema 3   -->
 <?php
-require "/inetpub/wwwroot/T3_REA_Oefeningen/includes/nav.php";
+require "/inetpub/wwwroot/T3_REA_Oefeningen/T03/includes/nav.php";
 ?>
 <form action="cookie_set.php" method="post">
     <p>

@@ -5,7 +5,7 @@
  * File: index.php
  */
 ?>
-<link href="/T3_REA_Oefeningen/styles/Footer.css" rel="stylesheet">
+<link href="/styles/Footer.css" rel="stylesheet">
 <footer>
     <?php
 
@@ -19,7 +19,7 @@
 
         else
         {
-            echo "<a href='/T3_REA_Oefeningen/hoofdstuk6/T3_REA_Oefening6_1.php'>Geef een naam op</a>" . "<a href='/T3_REA_Oefeningen/hoofdstuk6/T3_REA_Oefening6_1.php'>Geef een naam op</a>" . " | " . "IO1D4"  . " | " . date("d-m-Y G:i:s") ;
+            echo "<a href='/T3_REA_Oefeningen/hoofdstuk6/T3_REA_Oefening6_1.php'>Geef een naam op</a>" . " | " . "IO1D4"  . " | " . date("d-m-Y G:i:s") ;
         }
     ?>
 </footer>

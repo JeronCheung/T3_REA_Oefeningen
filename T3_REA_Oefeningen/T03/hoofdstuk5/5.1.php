@@ -21,7 +21,7 @@
 <header>
     <!--    Verbind het navigatie php bestand-->
     <?php
-    require "/inetpub/wwwroot/T3_REA_Oefeningen/includes/nav.php";
+
     ?>
 </header>
 <main>

@@ -13,7 +13,7 @@ Jeron
     </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="stylesheet" href= "/css/style.css">
+    <link  rel="stylesheet" href= "css/style.css">
 </head>
 <body>
 <header>
@@ -23,10 +23,14 @@ Jeron
     ?>
 </header>
 <main>
-    <img id="background" alt="background" src="photos/sportback.jpg">
     <table>
-        <td id="inleiding">In deze website kunnen studenten inloggen om hun activiteiten te kunnen bekijken en bijwerken</td>
+        <tr>
+            <td id="inleiding">In deze website kunnen studenten inloggen om hun activiteiten te kunnen bekijken en bijwerken</td>
+            <td><img id="background" alt="background" src="photos/sportback.jpg"></td>
+        </tr>
     </table>
+
+
 </main>
 <footer>
     <!--    link naar footer php -->
